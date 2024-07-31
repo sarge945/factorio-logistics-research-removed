@@ -24,4 +24,4 @@ The mod icon is adapted from the in-game Logistics research icon, available
 from the Factorio Wiki, and also uses the Wikimedia Commons
 "No" symbol, which is available under the public domain.
 
-To discuss the mod, please [join my Discord](https://discord.gg/2zRvrBXb6W)
+To discuss the mod, please [join my Discord](https://discord.gg/U9zRaSEpW4)

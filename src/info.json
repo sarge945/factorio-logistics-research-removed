@@ -1,0 +1,11 @@
+{
+	"name": "LogisticsResearchRemoved",
+	"version": "1.0.0",
+	"title": "Logistics Research Removed",
+	"contact": "plausiblesarge34@gmail.com",
+	"homepage": "https://discord.gg/2zRvrBXb6W",
+	"author": "Sarge945",
+	"description": "Completely removes the Logistics research, since I consider using robots to transport items around the factory overpowered. Roboports, Construction and Logistics robots are still available, and can still transfer items to/from the player, only the second tier Logistics research is disabled (no Buffer or Requestor chests, etc). Additionally, if this research is completed in an existing game, these items will be hidden and can no longer be built, however existing chests and recipes will remain intact.",
+	"factorio_version": "1.1",
+	"dependencies": ["base >= 1.1.0"]
+}

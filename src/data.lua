@@ -29,3 +29,8 @@ if settings.startup["LogisticResearchRemovedAllowCar"].value == true then
     data.raw["car"]["car"].trash_inventory_size = 20
     -- data.raw["car"]["car"].allow_remote_driving = true
 end
+
+-- Disallow inserters to remove items from storage chests, to prevent using them as manual requestor chests by setting filters and ordering bots to empty from a provider chest.
+if settings.startup["LogisticResearchRemovedAllowStorageInteraction"].value == false then
+    table.insert(data.raw["logistic-container"]["storage-chest"].flags,"no-automated-item-removal")
+end

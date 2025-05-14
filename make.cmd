@@ -1,6 +1,6 @@
 @echo off
 
-set modname=LogisticsResearchRemoved_1.0.3
+set modname=LogisticsResearchRemoved_1.0.4
 
 cd %~dp0
 rmdir /s /q "%~dp0out" 2>NUL

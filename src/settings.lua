@@ -13,5 +13,12 @@ data:extend({
     default_value = true,
     order = "b"
   },
+  {
+    type = "bool-setting",
+    name = "LogisticResearchRemovedAllowStorageInteraction",
+    setting_type = "startup",
+    default_value = false,
+    order = "c"
+  },
 })
 

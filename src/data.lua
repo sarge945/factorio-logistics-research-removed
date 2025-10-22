@@ -1,12 +1,13 @@
 --disable the chest recipes, in case the research is already completed (existing save)
-data.raw["recipe"]["active-provider-chest"].enabled = false
-data.raw["recipe"]["active-provider-chest"].hidden = true
-
+--Active Provider Chests are handled below
 data.raw["recipe"]["buffer-chest"].enabled = false
 data.raw["recipe"]["buffer-chest"].hidden = true
 
 data.raw["recipe"]["requester-chest"].enabled = false
 data.raw["recipe"]["requester-chest"].hidden = true
+
+--data.raw["recipe"]["active-provider-chest"].enabled = false
+--data.raw["recipe"]["active-provider-chest"].hidden = true
 
 --disable the Logistic System research
 data.raw["technology"]["logistic-system"].enabled = false
@@ -17,6 +18,17 @@ data.raw["technology"]["logistic-system"].hidden = true
 if settings.startup["LogisticResearchRemovedAllowTank"].value == true or settings.startup["LogisticResearchRemovedAllowCar"].value == true then
     table.insert(data.raw["technology"]["logistic-robotics"].effects,{modifier = true, type="vehicle-logistics"})
 end
+
+--Make Active Providers require the first tier research
+--Otherwise, disable them
+if settings.startup["LogisticResearchRemovedAllowActiveProvider"].value == true then
+    table.insert(data.raw["technology"]["construction-robotics"].effects,{type="unlock-recipe", recipe="active-provider-chest"})
+    table.insert(data.raw["technology"]["logistic-robotics"].effects,{type="unlock-recipe", recipe="active-provider-chest"})
+else
+    data.raw["recipe"]["active-provider-chest"].enabled = false
+    data.raw["recipe"]["active-provider-chest"].hidden = true
+end
+
 
 -- Disallow inserters to remove items from tanks, to prevent using them as overpriced requestor chests.
 if settings.startup["LogisticResearchRemovedAllowTank"].value == true then

@@ -1,11 +1,11 @@
 {
 	"name": "LogisticsResearchRemoved",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"title": "Logistics Research Removed",
 	"contact": "plausiblesarge34@gmail.com",
 	"homepage": "https://github.com/sarge945/factorio-logistics-research-removed",
 	"author": "Sarge945",
-	"description": "Completely removes the second Logistics research, since I consider using robots to transport items around the factory overpowered. Roboports, Construction and Logistics robots are still available, and can still transfer items to/from the player, only the second tier Logistics research is disabled (no Buffer, Active Provider or Requestor chests). Additionally, if this research is completed in an existing game, these items will be hidden and can no longer be built. Vehicle Logistics are enabled with the base logistics bots research. Vehicles and Storage Chests can no longer have their items removed by inserters.",
+	"description": "Completely removes the second Logistics research, since I consider using robots to transport items around the factory overpowered. Roboports, Construction and Logistics robots are still available, and can still transfer items to/from the player, only the second tier Logistics research is disabled (no Buffer or Requestor chests). Additionally, if this research is completed in an existing game, these items will be hidden and can no longer be built. Active Provider Chests (optional) and Vehicle Logistics are enabled with the base logistics bots research. Vehicles and Storage Chests can no longer have their items removed by inserters.",
 	"factorio_version": "2.0",
 	"dependencies": ["base >= 2.0"]
 }

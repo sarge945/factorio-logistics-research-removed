@@ -20,5 +20,12 @@ data:extend({
     default_value = false,
     order = "c"
   },
+  {
+    type = "bool-setting",
+    name = "LogisticResearchRemovedAllowActiveProvider",
+    setting_type = "startup",
+    default_value = false,
+    order = "d"
+  },
 })
 
